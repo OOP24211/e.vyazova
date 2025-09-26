@@ -24,7 +24,7 @@ public:
         file.open(infile);
         out.open(outfile);
         if (!file || !out) {
-            std::cout << "Error opening file\n";
+            std::cout << "Error opening file, can't open\n";
         }
     }
     void close() {
