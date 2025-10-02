@@ -7,7 +7,7 @@
 
 class Write {
 public:
-    Write(std::ofstream& out, const std::vector<Word>;sorted_words);
-}
+    Write(std::ofstream& out, const std::vector<Word>& sorted_words);
+};
 
 #endif

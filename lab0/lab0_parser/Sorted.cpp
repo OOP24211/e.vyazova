@@ -1,6 +1,6 @@
 #include "Sorted.hpp"
 
-static bool Sorted::compare(const Word& a, const Word& b) {
+bool Sorted::compare(const Word& a, const Word& b) {
     return a.frequency > b.frequency;
 }
 

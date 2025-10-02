@@ -6,6 +6,7 @@
 #include <string>
 #include <algorithm>
 #include <iostream>
+#include "Word.hpp"
 
 class Sorted {
 public:
@@ -13,6 +14,6 @@ public:
     static bool compare(const Word& a, const Word& b);
     double percentForWord(int total_word, int frequency);
     Sorted(std::unordered_map<std::string, int> frequency, int count_word);
-}
+};
 
 #endif

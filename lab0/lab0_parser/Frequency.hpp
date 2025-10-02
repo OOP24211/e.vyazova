@@ -16,6 +16,6 @@ public:
     int count_word = 0;
     std::string replacePunctuation(std::string line);
     Frequency(std::istream& in);
-}
+};
 
 #endif

@@ -2,7 +2,7 @@
 
 #include <iomanip>
 
-Write::Write(std::ofstream& out, const std::vector<Word> sorted_words) {
+Write::Write(std::ofstream& out, const std::vector<Word>& sorted_words) {
     out << "Слово, Частота, %\n";
     for (const auto& pair : sorted_words) {
         out << pair.words;

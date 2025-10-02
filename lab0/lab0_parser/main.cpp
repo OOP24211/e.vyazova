@@ -14,6 +14,9 @@ int main(int argc, char* argv[]) {
         return 1;
     }
     File f(argc, argv);
+    if (!f.IsValid) {
+        return 1;
+    }
     
     Frequency freq(f.file);
     std::unordered_map<std::string, int> frequency = freq.frequency_word;

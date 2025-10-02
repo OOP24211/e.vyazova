@@ -1,6 +1,6 @@
 #include "Frequency.hpp"
 
-std::string Frequence::replacePunctuation(std::string line) {
+std::string Frequency::replacePunctuation(std::string line) {
     for (int i = 0; i < line.length(); ++i) {
         char ch = line[i];
         if (std::ispunct(ch)) {

@@ -6,15 +6,16 @@
 #include <iostream>
 
 class File {
+private:
+    void openInput(const std::string& filename);
+    void openOutput(const std::string& filename);
 public:
     std::ifstream file;
     std::ofstream out;
-    
+    bool IsValid = false;
     File(int argc, char* argv[]);
-    void openInput(const std::string& filename);
-    void openOutput(const std::string& filename);
     
     ~File();
-}
+};
 
 #endif
