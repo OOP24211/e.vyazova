@@ -1,6 +1,6 @@
 #include "File.hpp"
 
-File::File(int argc, char* argv[]) {
+File::File(char* argv[]) {
     openInput(argv[1]);
     openOutput(argv[2]);
     if (file.is_open() && out.is_open()) {

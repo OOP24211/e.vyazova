@@ -13,7 +13,7 @@ int main(int argc, char* argv[]) {
         std::cout << "Incorrect number of parameters\n";
         return 1;
     }
-    File f(argc, argv);
+    File f(argv);
     if (!f.IsValid) {
         return 1;
     }

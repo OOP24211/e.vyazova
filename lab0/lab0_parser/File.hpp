@@ -13,7 +13,7 @@ public:
     std::ifstream file;
     std::ofstream out;
     bool IsValid = false;
-    File(int argc, char* argv[]);
+    File(char* argv[]);
     
     ~File();
 };
