@@ -31,6 +31,10 @@ void FibonachhiCacheLFU::put(int key, int value) {
             int KeyRemove = FreqKey[minFreq].front();
             FreqKey[minFreq].pop_front();
             Cache.erase(KeyRemove);
+            if (FreqKey[minFreq].empty()) {
+                FreqKey.erase(minFreq);
+                minFreq++;
+            }
         }
     }
     Node newNode;
